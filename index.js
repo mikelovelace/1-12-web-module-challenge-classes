@@ -1,4 +1,3 @@
-
 /*
   EXAMPLE TASK:
     - Write an Airplane class whose constructor initializes `name` from an argument.
@@ -44,7 +43,22 @@ class Airplane {
 */
 
 class Person {
-  
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+    this.stomach = []
+  }
+  eat(someFood) {
+    if(this.stomach.length < 10) {
+      this.stomach.push(someFood)
+    }
+  }
+  poop() {
+    return this.stomach = []
+  }
+  toString() {
+    return `${this.name}, ${this.age}`
+  }
 }
 
 /*
@@ -61,9 +75,7 @@ class Person {
         + The `drive` method should return a string "I ran out of fuel at x miles!" x being `odometer`.
 */
 
-class Car {
-  
-}
+class Car {}
 
 /*
   TASK 3
@@ -78,9 +90,7 @@ class Car {
         + {name} and {location} of course come from the instance's own properties.
 */
 
-class Lambdasian {
-  
-}
+class Lambdasian {}
 
 /*
   TASK 4
@@ -97,9 +107,7 @@ class Lambdasian {
         + `grade` receives a `student` object and a `subject` string as arguments and returns '{student.name} receives a perfect score on {subject}'
 */
 
-class Instructor {
-
-}
+class Instructor {}
 
 /*
   TASK 5
@@ -117,9 +125,7 @@ class Instructor {
         + `sprintChallenge` similar to PRAssignment but returns `student.name has begun sprint challenge on {subject}`
 */
 
-class Student {
-   
-}
+class Student {}
 
 /*
   TASK 6
@@ -135,9 +141,7 @@ class Student {
         + `debugsCode` a method that takes in a student object and a subject and returns `{name} debugs {student.name}'s code on {subject}`
 */
 
-class ProjectManager {
-   
-}
+class ProjectManager {}
 
 /*
   STRETCH PROBLEM (no tests!)
@@ -148,11 +152,10 @@ class ProjectManager {
       + If the student's grade is above a 70% let them graduate! Otherwise go back to grading their assignments to increase their score.
 */
 
-
 //End of Challenge
 /* 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 */
-function foo(){
-  return 'bar';
+function foo() {
+  return "bar";
 }
 
 module.exports = {
@@ -162,5 +165,5 @@ module.exports = {
   Lambdasian,
   Instructor,
   Student,
-  ProjectManager
-}
+  ProjectManager,
+};
